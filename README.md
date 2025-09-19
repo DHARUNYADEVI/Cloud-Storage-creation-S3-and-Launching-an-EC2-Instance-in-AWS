@@ -1,87 +1,75 @@
-# Cloud-Storage-creation-S3-and-Launching-an-EC2-Instance-in-AWS
-Ex.2 Cloud storage creation (S3) and launching an (Ec2) instance in AWS
-Aim:
-To create a Simple Storage Service (S3) in AWS and to launch an EC2 instance in AWS. 
-Procedure
-a)	Steps to Create a first S3 Bucket:
-Step 1: Sign in to the AWS Management Console
-Go to https://console.aws.amazon.com/s3.
-Step 2: Open the S3 Service
-In the console, type S3 in the search bar and select S3 to open the service dashboard.
-Step 3: Create Bucket
-Click the Create bucket button.
-Step 4: Configure Bucket Settings
-•	Bucket name: Choose a globally unique name.
-•	AWS Region: Select the region where you want to store your data.
-Step 5: Object Ownership
-Choose between:
-	ACLs disabled (recommended) – Bucket owner has full control.
-	ACLs enabled – Control access via access control lists.
-Step 6: Block Public Access Settings
-By default, all public access is blocked. Leave it as-is unless you need public access.
-Step 7: Bucket Versioning (optional)
-Choose whether to enable versioning for objects in the bucket.
-Step 8: Encryption (optional)
-Select encryption options (SSE-S3, SSE-KMS, or none).
-Step 9: Advanced Settings (optional)
-Add tags, configure logging, etc.
-Step 10: Create the Bucket
-Click Create bucket at the bottom of the page.
-b)	i. Steps to launch an EC2 Instance
-1.	Go to the EC2 Dashboard in AWS Console.
-2.	Click on “Launch Instance”.
-3.	Choose an Amazon Machine Image (AMI) (e.g., Amazon Linux).
-4.	Select an instance type (e.g., t2.micro for Free Tier).
+# EX- 2 CLOUD-STORAGE-CREATION-S3-AND-LAUNCHING-AN-EC2-INSTANCE-IN-AWS-
 
-5.	Create or choose a key pair for SSH access.
-6.	Configure network settings (use default VPC/subnet).
-7.	Configure storage (default root volume is fine).
-8.	Review the settings and click “Launch Instance”.
-9.	Wait for the instance to enter the running state.
+  ## AIM
+       To Create S3 bucket and EC2 Instances for Linux and Windows.
+## PROBLEM STATEMENT
+   This experiment demonstrates the process of setting up cloud infrastructure on AWS by creating an S3 bucket for storage and EC2 instances to host Linux and Windows environments. The goal is to provide an overview of how to configure and interact with these resources effectively, along with commands and screenshots to document the process.
 
-c)	Step 3: Connect to Your Instance
-•	Linux: Use SSH command with your .pem key.
-•	Windows: Use RDP with decrypted admin password.
-
-d)	Steps to Clean Up (Terminate the Instance)
-1.	Go to EC2 Instances.
-2.	Select your instance → Instance State → Terminate.
-
-
-Snap Shots:
+## ALGORITHM
+ ### Step 1: Log in
  
-
-Snap Shot 1: Simple Storage Service (S3)
+ Log in to AWS Console
  
-
-Snap Shot 2:  EC2 (Elastic Compute Cloud) – Instance
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Result:
-Thus, a Simple Storage Service (S3) and EC2 (Elastic Compute Cloud) - instance has been successfully created and launched in AWS
+ ### Step 2: Create an S3 Bucket
  
+Navigate to the S3 service.
+Click on Create bucket.
+Enter a Bucket name and select a Region.
+Configure Bucket settings as required (e.g., versioning, public access).
+Click on Create bucket to finalize.
+
+ ### Step 3: Create an EC2 Instance (Linux)
+ 
+Go to the EC2 service.
+Click on Launch Instance.
+Select an Amazon Machine Image (AMI) for Linux (e.g., Amazon Linux 2).
+Choose an Instance Type (e.g., t2.micro for free tier).
+Configure Instance Details, Storage, and Security Group.
+Review and click Launch with a key pair (or create one if needed).
+
+ ### Step 4: Create an EC2 Instance (Windows)
+ 
+Return to the EC2 service and click Launch Instance.
+Select a Windows AMI (e.g., Windows Server 2019).
+Choose the Instance Type.
+Configure Instance Details, Storage, and Security Group.
+Review and launch with a key pair (for future login).
+
+ ### Step 5: Verify and Connect to Instances
+ 
+Verify the status of both instances in the EC2 dashboard.
+Connect to the Linux instance using SSH.
+Connect to the Windows instance using RDP.
+
+## COMMANDS
+
+## OUTPUT
+### REG NUMBER: 212223220018
+### NAME: DHARUNYADEVI S
+
+S3 BUCKET:
+
+
+<img width="1720" height="746" alt="image" src="https://github.com/user-attachments/assets/7b6ddb26-5d3f-4a52-b4c3-39de02259654" />
+
+
+<img width="1740" height="745" alt="image" src="https://github.com/user-attachments/assets/684cfa33-589a-4fc2-9c65-a3803fefe359" />
+
+
+
+EC2 INSTANCE:
+
+
+<img width="1744" height="750" alt="image" src="https://github.com/user-attachments/assets/78244eae-d78c-4936-b1d3-fc9bdccb6f43" />
+
+
+
+<img width="1748" height="747" alt="image" src="https://github.com/user-attachments/assets/d95bbcd1-a2dc-4522-9e80-9fd735c59a34" />
+
+
+## RESULT
+ 
+Successfully created an S3 bucket and EC2 instances for both Linux and Windows, demonstrating cloud resource management on AWS.
+  
+
+
